@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animacion</title>
+    <style>
+        .zoro{
+            width: 352px;
+            height: 291px;
+            background: url("zoroanimacion.png");
+            margin-top: 10px;
+            margin-left: 200px;
+            /*background-position: -706px 0;*/
+            animation: girar 2s steps(9) infinite;
+        }
+
+        @keyframes girar{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: -3170px;
+
+            }
+        }
+        .doflamingo{
+            width: 734px;
+            height: 356px;
+            background: url("Doflamingo.png");
+            margin: 5 auto;
+            /*background-position: -706px 0;*/
+            animation: dofla 2s steps(7) infinite;
+        }
+
+        @keyframes dofla{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: -5178px;
+
+            }
+        }
+        .usop{
+            width: 254px;
+            height: 233px;
+            background: url("Usopp.png");
+            margin: 0 auto;
+            /*background-position: -706px 0;*/
+            animation: uso 3s steps(11) infinite;
+        }
+
+        @keyframes uso{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: -2803px;
+
+            }
+        }
+        .franky{
+            width: 314px;
+            height: 180px;
+            background: url("fondo png.png");
+            margin-left: 250px;
+            /*background-position: -706px 0;*/
+            animation: puño 10s steps(6);
+        }
+
+        @keyframes puño{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: -1876px;
+
+            }
+        }
+        .franky2{
+            width: 314px;
+            height: 180px;
+            background: url("Franky.png");
+            margin-left: 250px;
+            margin-top: -20px;
+            /*background-position: -706px 0;*/
+            animation: puño 1.5s steps(6) infinite;
+        }
+
+        @keyframes puño{
+            0%{
+                background-position: 0px;
+            }
+            100%{
+                background-position: -1876px;
+
+            }
+        }
+        .enemigo1{
+            width: 140px;
+            height: 171px;
+            background: url("enemigo1.png");
+            margin-left: 170px;
+            margin-top: -200px;
+            /*background-position: -706px 0;*/
+            animation: caida1 3s steps(4) infinite, enemigo1-1 5s  linear infinite;
+            
+        }
+
+        @keyframes caida1{
+            0%{
+                background-position: -563px;
+                
+            }
+            100%{
+                background-position: 0px;
+
+            }
+            
+    }
+        @keyframes enemigo1-1{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+    }
+        .enemigo2{
+            width: 142px;
+            height: 171px;
+            background: url("enemigo1.png");
+            margin-left: 170px;
+            margin-top: -300px;
+            /*background-position: -706px 0;*/
+            animation: caida1 3s steps(4) infinite
+        }
+
+        .enemigo3{
+            width: 98px;
+            height: 118px;
+            background: url("cow.png");
+            margin-left: 200px;
+            margin-top: -100px;
+            /*background-position: -706px 0;*/
+            animation: vuelo 2s steps(4) infinite, enemigo3-1 3s linear infinite;
+        }
+
+        @keyframes vuelo{
+            0%{
+                background-position: 0px;     
+            }
+            100%{
+                background-position: -389px;
+            }
+        }
+        @keyframes enemigo3-1{
+            0%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateY(-40%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .enemigo4{
+            width: 227px;
+            height: 157px;
+            background: url("issho.png");
+            margin-left: 80px;
+            margin-top: -135px;
+            /*background-position: -706px 0;*/
+            animation: caida 2s steps(6) infinite, enemgio2-1 5s linear infinite;  
+        }
+        
+
+        @keyframes caida{
+            0%{
+                background-position: -1372px;
+            }
+            100%{
+                background-position: 0px;
+            }
+            
+        }
+        @keyframes enemigo2-1{
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+
+        .combate1{
+            height:350px;
+            width: 8000px;
+            background: url("fondo.jpg");
+        }
+        .combate2{
+            height:350px;
+            width: 8000px;
+            background: url("fondo.jpg");
+        }
+        .combate3{
+            height:350px;
+            width: 8000px;
+            position: relative;
+            background: url("cielo.png");
+            animation: animarfondo 3s linear infinite;
+        }
+        @keyframes animarfondo{
+            0%{
+                background-position: 0px;           
+            }
+            100%{
+                background-position: -814px;
+            }
+        }
+        .combate4{
+            height:350px;
+            width: 8000px;
+            background: url("hierba.jpg");
+        }
+        .combate1,
+.combate2,
+.combate3,
+.combate4 {
+  background-size: cover;
+}
+
+    </style>
+  </head>
+  <body>
+<div class="combate1">
+    <div class="zoro"></div>
+    <div class="enemigo1"></div>
+</div>
+<div class="combate2">
+    <div class="doflamingo"></div>
+    <div class="enemigo2"></div>
+</div>
+    <div class="combate3">
+    <div class="usop"></div>
+    <div class="enemigo3"></div>
+</div>
+<div class="combate4">
+<div class="franky"></div>
+<div class="franky2"></div>
+<div class="enemigo4"></div>
+</div>
+
+</div>
+  </body>
+</html>
